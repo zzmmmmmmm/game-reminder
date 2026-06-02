@@ -11,27 +11,31 @@ const WEEKLY_ACTIVITIES = {
   1: { // 周一
     name: '周一',
     list: [
+      { time: '17:30', name: '帮派宴会', icon: '🍻' },
       { time: '20:30', name: '首席争霸', icon: '⚔️' },
       { time: '21:40', name: '门派论剑', icon: '⚔️' }
     ],
     reminders: [
+      { time: '17:20', msg: '🍻【17:30 帮派宴会】10分钟后开始！\n别忘了吃席领奖励！' },
       { time: '20:20', msg: '⚔️【20:30 首席争霸】10分钟后开始！\n门派最强之争，准备上线！' },
       { time: '21:30', msg: '⚔️【21:40 门派论剑】10分钟后开始！\n兄弟们上号！' }
     ]
   },
-  2: { // 周二（最忙）
+  2: { // 周二
     name: '周二',
     list: [
       { time: '14:30', name: '帮派攻城战', icon: '🏰' },
+      { time: '17:30', name: '帮派宴会', icon: '🍻' },
       { time: '18:55', name: '帮派封魔洞', icon: '🏰' },
-      { time: '20:05', name: '帮派竞赛', icon: '⭐' },
+      { time: '20:30', name: '帮派竞赛', icon: '⭐' },
       { time: '21:25', name: '暗黑龙王', icon: '🐉' },
       { time: '21:40', name: '门派论剑', icon: '⚔️' }
     ],
     reminders: [
       { time: '14:20', msg: '🏰【14:30 帮派攻城战】10分钟后开始！\n记得上线攻城！' },
+      { time: '17:20', msg: '🍻【17:30 帮派宴会】10分钟后开始！\n别忘了吃席领奖励！' },
       { time: '18:45', msg: '🏰【18:55 帮派封魔洞】10分钟后开始！\n⚠️ 记得提前预约！' },
-      { time: '19:55', msg: '⭐【20:05 帮派竞赛】10分钟后开始！\n💰 银币大户，必参加！' },
+      { time: '20:20', msg: '⭐【20:30 帮派竞赛】10分钟后开始！\n💰 银币大户，必参加！' },
       { time: '21:15', msg: '🐉【21:25 暗黑龙王】10分钟后开始！\n⚠️ 记得提前预约！' },
       { time: '21:30', msg: '⚔️【21:40 门派论剑】10分钟后开始！' }
     ]
@@ -39,10 +43,12 @@ const WEEKLY_ACTIVITIES = {
   3: { // 周三
     name: '周三',
     list: [
+      { time: '17:30', name: '帮派宴会', icon: '🍻' },
       { time: '20:05', name: '排位赛', icon: '🏆' },
       { time: '21:40', name: '门派论剑', icon: '⚔️' }
     ],
     reminders: [
+      { time: '17:20', msg: '🍻【17:30 帮派宴会】10分钟后开始！\n别忘了吃席领奖励！' },
       { time: '19:55', msg: '🏆【20:05 排位赛】10分钟后开始！\n冲排名的兄弟上号！' },
       { time: '21:30', msg: '⚔️【21:40 门派论剑】10分钟后开始！' }
     ]
@@ -50,20 +56,23 @@ const WEEKLY_ACTIVITIES = {
   4: { // 周四
     name: '周四',
     list: [
+      { time: '17:30', name: '帮派宴会', icon: '🍻' },
       { time: '18:55', name: '帮派封魔洞', icon: '🏰' },
-      { time: '20:05', name: '帮派竞赛', icon: '⭐' },
+      { time: '20:30', name: '帮派竞赛', icon: '⭐' },
       { time: '21:40', name: '门派论剑', icon: '⚔️' }
     ],
     reminders: [
+      { time: '17:20', msg: '🍻【17:30 帮派宴会】10分钟后开始！\n别忘了吃席领奖励！' },
       { time: '18:45', msg: '🏰【18:55 帮派封魔洞】10分钟后开始！\n⚠️ 记得提前预约！' },
-      { time: '19:55', msg: '⭐【20:05 帮派竞赛】10分钟后开始！\n💰 帮派间对抗，争荣誉拿银币！' },
+      { time: '20:20', msg: '⭐【20:30 帮派竞赛】10分钟后开始！\n💰 帮派间对抗，争荣誉拿银币！' },
       { time: '21:30', msg: '⚔️【21:40 门派论剑】10分钟后开始！' }
     ]
   },
-  5: { // 周五（活动最多）
+  5: { // 周五
     name: '周五',
     list: [
       { time: '14:30', name: '帮派攻城战', icon: '🏰' },
+      { time: '17:30', name: '帮派宴会', icon: '🍻' },
       { time: '20:05', name: '排位赛', icon: '🏆' },
       { time: '21:00', name: '排位赛·第二场', icon: '🏆' },
       { time: '21:40', name: '门派论剑', icon: '⚔️' },
@@ -71,6 +80,7 @@ const WEEKLY_ACTIVITIES = {
     ],
     reminders: [
       { time: '14:20', msg: '🏰【14:30 帮派攻城战】10分钟后开始！' },
+      { time: '17:20', msg: '🍻【17:30 帮派宴会】10分钟后开始！\n别忘了吃席领奖励！' },
       { time: '19:55', msg: '🏆【20:05 排位赛】10分钟后开始！\n今晚排位赛有两场（20:05和21:00）' },
       { time: '20:50', msg: '🏆【21:00 排位赛·第二场】10分钟后开始！' },
       { time: '21:30', msg: '⚔️【21:40 门派论剑】10分钟后开始！' },
@@ -81,11 +91,13 @@ const WEEKLY_ACTIVITIES = {
     name: '周六',
     list: [
       { time: '14:30', name: '霜原幻境', icon: '❄️' },
+      { time: '17:30', name: '帮派宴会', icon: '🍻' },
       { time: '20:05', name: '门派演武', icon: '⚔️' },
       { time: '21:30', name: '霜原幻境·第二场', icon: '❄️' }
     ],
     reminders: [
       { time: '14:20', msg: '❄️【14:30 霜原幻境】10分钟后开始！' },
+      { time: '17:20', msg: '🍻【17:30 帮派宴会】10分钟后开始！\n别忘了吃席领奖励！' },
       { time: '19:55', msg: '⚔️【20:05 门派演武】10分钟后开始！' },
       { time: '21:20', msg: '❄️【21:30 霜原幻境·第二场】10分钟后开始！' }
     ]
@@ -93,10 +105,12 @@ const WEEKLY_ACTIVITIES = {
   0: { // 周日
     name: '周日',
     list: [
-      { time: '14:30', name: '群雄逐鹿', icon: '🦌' }
+      { time: '14:30', name: '群雄逐鹿', icon: '🦌' },
+      { time: '17:30', name: '帮派宴会', icon: '🍻' }
     ],
     reminders: [
-      { time: '14:20', msg: '🦌【14:30 群雄逐鹿】10分钟后开始！' }
+      { time: '14:20', msg: '🦌【14:30 群雄逐鹿】10分钟后开始！' },
+      { time: '17:20', msg: '🍻【17:30 帮派宴会】10分钟后开始！\n别忘了吃席领奖励！' }
     ]
   }
 };
@@ -106,7 +120,6 @@ function buildMorningMsg(dayOfWeek) {
   const today = WEEKLY_ACTIVITIES[dayOfWeek];
   const dayName = today ? today.name : '今天';
 
-  // 今日活动列表
   let activityList = '🎉 今天没有限时活动，安心做日常！';
   if (today && today.list.length > 0) {
     activityList = today.list.map(a => `${a.icon} ${a.time} ${a.name}`).join('\n');
@@ -180,14 +193,12 @@ async function main() {
 
   console.log(`当前北京时间: 周${dayOfWeek} ${currentTime}`);
 
-  // 早上8点发今日清单+活动总览
   if (hour === 8 && minute <= 5) {
     const msg = buildMorningMsg(dayOfWeek);
     await sendMessage(msg);
     return;
   }
 
-  // 活动前10分钟发提醒
   const today = WEEKLY_ACTIVITIES[dayOfWeek];
   if (today) {
     for (const reminder of today.reminders) {
